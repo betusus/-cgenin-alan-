@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+
+        Scanner girdi = new Scanner(System.in);
+
+        int a,b,c;
+        double u,alan;
+
+        System.out.println("1. kenar uzunluğunu giriniz:" );
+        a=girdi.nextInt();
+
+        System.out.println("2. kenar uzunluğunu giriniz:");
+        b=girdi.nextInt();
+
+        System.out.println("3.kenar uzunluğunu giriniz:");
+        c= girdi.nextInt();
+
+        u=(a+b+c)/2;
+        alan= Math.sqrt(u*(u-a)*(u-b)*(u-c));
+        System.out.println("üçgenin alanı: "+alan);
